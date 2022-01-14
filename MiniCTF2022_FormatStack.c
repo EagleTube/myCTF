@@ -4,11 +4,11 @@
 
 void flags();
 int main() {
-    int secret = 0x1337; // change this
-    int chgx = 0x1337dfdf; // change this
+    int secret = 0x3a61e37e;
+    int chgx = 0x1337dfdf;
     char name[100] = {0};
     read(0, name, 0x100);
-    if (chgx == 0x1337) {
+    if (chgx == 0x3a61e37e) {
         flags();
     } else {
         printf("\nHello ");
@@ -20,10 +20,10 @@ int main() {
 
 void flags()
 {
-    char f[100] = "EncryptedText"; // change this
+    char f[100] = "G=N@u+--1YQb*Y.l-YS*o9Y+--1w";
     for(int i = 0; (i < 100 && f[i] != '\0'); i++)
     {
-        f[i] = f[i] + 999; // change this
+        f[i] = f[i] + 6;
     }
-    printf(f); // output for decrypted text
+    printf(f);
 }
